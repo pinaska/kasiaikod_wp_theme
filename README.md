@@ -1,1 +1,2 @@
 # kasiaikod_wp_theme
+this is Wordpress theme developed on recently released WP Rig  development theme. Once completed, it will replace my first Wordpress website project for my Polish blog Kasia i kod, that is currently using the child theme of twenty sixteen
