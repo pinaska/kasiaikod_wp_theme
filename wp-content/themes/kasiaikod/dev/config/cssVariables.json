@@ -6,7 +6,8 @@
     	"global-font-line-height": "1.4",
     	"highlight-font-family": "'Roboto Condensed', sans-serif",
     	"content-width": "45",
-		"dropdown-symbol-width": "0.7em"
+    "dropdown-symbol-width": "0.7em",
+    "theme-background-color":"#efefef"
 	},
 	"queries": {
     	"narrow-menu-query": "screen and (max-width: 37.5em)",

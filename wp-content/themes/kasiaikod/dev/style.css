@@ -723,6 +723,7 @@ textarea {
 
 .site-header {
 	padding-bottom: 1em;
+	background-color: var(--theme-background-color);
 }
 
 .header-image {
@@ -776,8 +777,8 @@ textarea {
 	display: block;
 	margin: 0 auto 2em;
 	padding: 0 1em;
-	max-width: calc(var(--content-width) * 16)px; /* Fallback for older browsers. */
-	max-width: var(--content-width)rem;
+	/* max-width: calc(var(--content-width) * 16)px; /* Fallback for older browsers. */
+	/* max-width: var(--content-width)rem; */
 	font-family: var(--highlight-font-family);
 }
 
