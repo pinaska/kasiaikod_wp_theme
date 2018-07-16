@@ -131,7 +131,7 @@ function wprig_post_categories() {
 		$categories_list = get_the_category_list( esc_html__( ', ', 'wprig' ) );
 		if ( $categories_list ) {
 			/* translators: 1: list of categories. */
-			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'wprig' ) . ' </span>', $categories_list ); // WPCS: XSS OK.
+			printf( '<span class="cat-links">' . $categories_list . ' </span>' ); // WPCS: XSS OK.
 		}
 	}
 }

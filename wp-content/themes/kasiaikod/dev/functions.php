@@ -182,25 +182,25 @@ function wprig_fonts_url() {
 	$fonts_url = '';
 
 	/**
-	 * Translator: If Roboto Sans does not support characters in your language, translate this to 'off'.
+	 * Translator: If Open Sans does not support characters in your language, translate this to 'off'.
 	 */
-	$roboto = esc_html_x( 'on', 'Roboto Condensed font: on or off', 'wprig' );
+	$open_sans = esc_html_x( 'on', 'Open Sans font: on or off', 'wprig' );
 	/**
-	 * Translator: If Crimson Text does not support characters in your language, translate this to 'off'.
+	 * Translator: If Playfair Display does not support characters in your language, translate this to 'off'.
 	 */
-	$crimson_text = esc_html_x( 'on', 'Crimson Text font: on or off', 'wprig' );
+	$playfair_display = esc_html_x( 'on', 'Playfair Display font: on or off', 'wprig' );
 
 	$font_families = array();
 
-	if ( 'off' !== $roboto ) {
-		$font_families[] = 'Roboto Condensed:400,400i,700,700i';
+	if ( 'off' !== $open_sans ) {
+		$font_families[] = 'Open Sans:400,600,600i';
 	}
 
-	if ( 'off' !== $crimson_text ) {
-		$font_families[] = 'Crimson Text:400,400i,600,600i';
+	if ( 'off' !== $playfair_display ) {
+		$font_families[] = 'Playfair Display:400,400i,700,700i';
 	}
 
-	if ( in_array( 'on', array( $roboto, $crimson_text ) ) ) {
+	if ( in_array( 'on', array( $open_sans, $playfair_display ) ) ) {
 		$query_args = array(
 			'family' => urlencode( implode( '|', $font_families ) ),
 			'subset' => urlencode( 'latin,latin-ext' ),
@@ -273,6 +273,7 @@ function wprig_styles() {
 
 	// Enqueue main stylesheet.
 	wp_enqueue_style( 'wprig-base-style', get_stylesheet_uri(), array(), '20180514' );
+	wp_enqueue_style( 'wprig-sass-demo-style', get_theme_file_uri() . '/css/main.css', array(), '20180514' );
 
 	// Register component styles that are printed as needed.
 	wp_register_style( 'wprig-comments', get_theme_file_uri( '/css/comments.css' ), array(), '20180514' );

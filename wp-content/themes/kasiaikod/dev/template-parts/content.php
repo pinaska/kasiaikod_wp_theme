@@ -11,6 +11,9 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
+		<div class="post-cat">
+			<?php wprig_post_categories();?>
+		</div>
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -62,7 +65,7 @@
 
 	<footer class="entry-footer">
 		<?php
-		wprig_post_categories();
+
 		wprig_post_tags();
 		wprig_edit_post_link();
 		?>
