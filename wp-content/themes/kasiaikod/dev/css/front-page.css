@@ -34,6 +34,10 @@
 	.wp-caption.alignleft {
 		margin-left: 0;
 	}
+	.post-thumbnail{
+		display: block;
+		margin: 0 -2rem;
+	}
 
 	.wp-block-image.alignright,
 	.wp-caption.alignright {
