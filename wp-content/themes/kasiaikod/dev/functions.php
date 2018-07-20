@@ -63,14 +63,14 @@ function wprig_setup() {
 	);
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support(
-		'custom-background', apply_filters(
-			'wprig_custom_background_args', array(
-				'default-color' => 'ffffff',
-				'default-image' => '',
-			)
-		)
-	);
+	// add_theme_support(
+	// 	'custom-background', apply_filters(
+	// 		'wprig_custom_background_args', array(
+	// 			'default-color' => 'ffffff',
+	// 			'default-image' => '',
+	// 		)
+	// 	)
+	// );
 
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
@@ -100,53 +100,51 @@ function wprig_setup() {
 	 * Add support for block color palettes.
 	 *
 	 * @link https://wordpress.org/gutenberg/handbook/extensibility/theme-support/
-	 */
-	add_theme_support( 'editor-color-palette',
-		array(
-			'name'  => 'Dusty orange',
-			'color' => '#ED8F5B',
-		),
-		array(
-			'name'  => 'Dusty red',
-			'color' => '#E36D60',
-		),
-		array(
-			'name'  => 'Dusty wine',
-			'color' => '#9C4368',
-		),
-		array(
-			'name'  => 'Dark sunset',
-			'color' => '#33223B',
-		),
-		array(
-			'name'  => 'Almost black',
-			'color' => '#0A1C28',
-		),
-		array(
-			'name'  => 'Dusty water',
-			'color' => '#41848F',
-		),
-		array(
-			'name'  => 'Dusty sky',
-			'color' => '#72A7A3',
-		),
-		array(
-			'name'  => 'Dusty daylight',
-			'color' => '#97C0B7',
-		),
-		array(
-			'name'  => 'Dusty sun',
-			'color' => '#EEE9D1',
-		)
-	);
+	*add_theme_support( 'editor-color-palette',
+	*	array(
+	*		'name'  => 'Dusty orange',
+	*		'color' => '#ED8F5B',
+	*	),
+	*	array(
+	*		'name'  => 'Dusty red',
+	*		'color' => '#E36D60',
+	*	),
+	*	array(
+	*		'name'  => 'Dusty wine',
+	*		'color' => '#9C4368',
+	*	),
+	*	array(
+	*		'name'  => 'Dark sunset',
+	*		'color' => '#33223B',
+	*	),
+	*	array(
+	*		'name'  => 'Almost black',
+	*		'color' => '#0A1C28',
+	*	),
+	*	array(
+	*		'name'  => 'Dusty water',
+	*		'color' => '#41848F',
+	*	),
+	*	array(
+	*		'name'  => 'Dusty sky',
+	*		'color' => '#72A7A3',
+	*	),
+	*	array(
+	*		'name'  => 'Dusty daylight',
+	*		'color' => '#97C0B7',
+	*	),
+	*	array(
+	*		'name'  => 'Dusty sun',
+	*		'color' => '#EEE9D1',
+	*	)
+	*);
 
-	/**
 	 * Optional: Disable custom colors in block color palettes.
 	 *
 	 * @link https://wordpress.org/gutenberg/handbook/extensibility/theme-support/
-	 *
-	 * add_theme_support( 'disable-custom-colors' );
 	 */
+	 add_theme_support( 'disable-custom-colors' );
+
 
 	/**
 	 * Optional: Add AMP support.

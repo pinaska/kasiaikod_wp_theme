@@ -10,6 +10,7 @@ wp-content/themes/*
 !wp-content/themes/kasiaikod
 .vscode
 wp-content/plugins
+wp-content/uploads/
 
 wp-config.php
 wp-content/advanced-cache.php
