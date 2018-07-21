@@ -382,7 +382,7 @@ template {
 }
 
 /**
- * Hide lazy load placeholders when browser does not have JS enabled.
+ * Hide lazy load placegradient-placers when browser does not have JS enabled.
  * Should override everything, therefore !important.
  */
 .no-js .lazy {
@@ -723,7 +723,7 @@ textarea {
 
 .site-header {
 	padding-bottom: 1em;
-	background-color: var(--theme-background-color);
+	/* background-color: var(--header-background-color); */
 }
 
 .header-image {
@@ -742,21 +742,24 @@ textarea {
 
 .site-branding {
 	text-align: center;
-	padding: 60px 0 1.75em;
+	/* padding: 60px 0 1.75em;
+	background-color: var(--header-background-color); */
 }
 
 .site-title {
 	margin: 0 1em;
 	font-family: var(--highlight-font-family);
 	font-size: 38px;
-	font-weight: bold;
+	font-weight: lighter;
 	line-height: 1.2;
-	color: #333332;
+	color: #fff;
 }
 
 .site-title a {
 	text-decoration: none;
 	color: inherit;
+	text-transform: uppercase;
+	font-size: 3rem
 }
 
 .site-description {
@@ -766,7 +769,7 @@ textarea {
 	font-weight: inherit;
 	line-height: 1.4;
 	word-wrap: break-word;
-	color: #757575;
+	color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -789,7 +792,7 @@ textarea {
 	font-family: var(--highlight-font-family);
 	font-size: 80%;
 	text-transform: uppercase;
-	border: 2px solid black;
+	border: 2px solid #FF83D1;;
 	border-radius: 0;
 	background: transparent;
 }
@@ -799,7 +802,8 @@ textarea {
 	width: 100%;
 	padding: .5em 1em .5em 0;
 	text-decoration: none;
-	color: black;
+	color: #FF83D1;
+	text-transform: uppercase;
 }
 
 .main-navigation a:hover,

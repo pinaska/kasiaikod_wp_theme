@@ -184,21 +184,21 @@ function wprig_fonts_url() {
 	 */
 	$open_sans = esc_html_x( 'on', 'Open Sans font: on or off', 'wprig' );
 	/**
-	 * Translator: If Playfair Display does not support characters in your language, translate this to 'off'.
+	 * Translator: If montserrat Display does not support characters in your language, translate this to 'off'.
 	 */
-	$playfair_display = esc_html_x( 'on', 'Playfair Display font: on or off', 'wprig' );
+	$montserrat = esc_html_x( 'on', 'Montserrat font: on or off', 'wprig' );
 
 	$font_families = array();
 
 	if ( 'off' !== $open_sans ) {
-		$font_families[] = 'Open Sans:400,600,600i';
+		$font_families[] = 'Open Sans:400,400i,700';
 	}
 
-	if ( 'off' !== $playfair_display ) {
-		$font_families[] = 'Playfair Display:400,400i,700,700i';
+	if ( 'off' !== $montserrat ) {
+		$font_families[] = 'Montserrat:500,500i,700,700i';
 	}
 
-	if ( in_array( 'on', array( $open_sans, $playfair_display ) ) ) {
+	if ( in_array( 'on', array( $open_sans, $montserrat ) ) ) {
 		$query_args = array(
 			'family' => urlencode( implode( '|', $font_families ) ),
 			'subset' => urlencode( 'latin,latin-ext' ),

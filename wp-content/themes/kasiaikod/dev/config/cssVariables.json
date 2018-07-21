@@ -1,13 +1,13 @@
 {
 	"variables": {
-		"global-font-color": "#333",
-		"global-font-family": "'Playfair Display', serif",
+		"global-font-color": "#354568",
+		"global-font-family": "'Open Sans', sans-serif",
     	"global-font-size": "20",
     	"global-font-line-height": "1.4",
-    	"highlight-font-family": "'Open Sans', sans-serif",
+    	"highlight-font-family": "'Montserrat', sans-serif",
     	"content-width": "45",
     "dropdown-symbol-width": "0.7em",
-    "theme-background-color":"#efefef"
+    "header-background-color":"#45C7E0"
 	},
 	"queries": {
     	"narrow-menu-query": "screen and (max-width: 37.5em)",

@@ -1,9 +1,123 @@
 .entry-title {
-	background-color: var(--theme-background-color); }
+	background-color: var(--header-background-color); }
 	.entry-title a {
 		color: white; }
 
-.entry-title {
-	font-style: italic; }
+.site-title a {
+	font-weight: 700;
+	letter-spacing: 0.3rem; }
+
+.site-description {
+	letter-spacing: 0.3rem; }
+
+.gradient-placer, .first, .second, .third {
+	height: 40vh;
+	width: 100%; }
+
+.first, .second, .third {
+	position: absolute; }
+
+.second, .third {
+	opacity: 0; }
+
+.gradient-placer {
+	height: 40vh;
+	position: relative;
+	z-index: 1; }
+
+.first {
+	animation: first 10s infinite;
+	background: linear-gradient(#bd3c92, #78075c);
+	z-index: 10; }
+
+@keyframes first {
+	0% {
+		opacity: 1.0; }
+	10% {
+		opacity: 0.8; }
+	20% {
+		opacity: 0.6; }
+	30% {
+		opacity: 0.4; }
+	40% {
+		opacity: 0.2; }
+	50% {
+		opacity: 0.1; }
+	60% {
+		opacity: 0.2; }
+	70% {
+		opacity: 0.4; }
+	80% {
+		opacity: 0.6; }
+	90% {
+		opacity: 0.8; }
+	100% {
+		opacity: 1.0; } }
+
+.second {
+	animation: second 10s infinite;
+	animation-delay: 2s;
+	background: linear-gradient(#45C7E0, #00a1f0);
+	z-index: 20; }
+
+@keyframes second {
+	0% {
+		opacity: 0; }
+	10% {
+		opacity: 0.2; }
+	20% {
+		opacity: 0.4; }
+	30% {
+		opacity: 0.6; }
+	40% {
+		opacity: 0.8; }
+	50% {
+		opacity: 1.0; }
+	60% {
+		opacity: 0.8; }
+	70% {
+		opacity: 0.6; }
+	80% {
+		opacity: 0.4; }
+	90% {
+		opacity: 0.2; }
+	100% {
+		opacity: 0; } }
+
+.third {
+	animation: third 10s infinite;
+	animation-delay: 8s;
+	background: linear-gradient(#FF83D1, #ff75c6);
+	z-index: 30; }
+
+@keyframes third {
+	0% {
+		opacity: 0; }
+	10% {
+		opacity: 0.2; }
+	20% {
+		opacity: 0.4; }
+	30% {
+		opacity: 0.6; }
+	40% {
+		opacity: 0.8; }
+	50% {
+		opacity: 1.0; }
+	60% {
+		opacity: 0.8; }
+	70% {
+		opacity: 0.6; }
+	80% {
+		opacity: 0.4; }
+	90% {
+		opacity: 0.2; }
+	100% {
+		opacity: 0; } }
+
+.txt {
+	margin-top: calc(10vh);
+	position: absolute;
+	width: 100%;
+	z-index: 1000; }
 
 /*# sourceMappingURL=../../maps/dev/css/main.css.map */
