@@ -72,6 +72,13 @@
 					?>
 				</div>
 				<div class="social-menu-container">
+					<ul class="social-icons">
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-github"></i></a></li>
+						<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
 					<?php
 
 					wp_nav_menu(

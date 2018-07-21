@@ -252,6 +252,15 @@ add_action( 'enqueue_block_editor_assets', 'wprig_gutenberg_styles' );
  */
 function wprig_widgets_init() {
 	register_sidebar( array(
+		'name'          => esc_html__( 'Social media icons', 'wprig' ),
+		'id'            => 'sidebar-social',
+		'description'   => esc_html__('Widget area for social media icons in the footer','wprig'),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'wprig' ),
 		'id'            => 'sidebar-1',
 		'description'   => esc_html__( 'Add widgets here.', 'wprig' ),
