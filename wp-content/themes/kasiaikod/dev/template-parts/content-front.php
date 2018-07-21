@@ -8,7 +8,7 @@
  */
 
 ?>
-
+<?php get_search_form();?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <?php wprig_post_thumbnail(); ?>
 	<header class="entry-header">
@@ -33,7 +33,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php the_excerpt(); ?>
+		<?php the_content(); ?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
@@ -44,3 +44,13 @@
 		?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
+<article class="new-posts">
+		<?php $the_query = new WP_Query( 'posts_per_page=5' ); ?>
+
+	<?php while ($the_query -> have_posts()) : $the_query -> the_post();?>
+		<a href="<?php the_permalink() ?>"><?php the_post_thumbnail('medium')?></a>
+	<?php
+	endwhile;
+	wp_reset_postdata();
+	?>
+</article>

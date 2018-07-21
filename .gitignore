@@ -6,19 +6,11 @@
 node_modules
 wp-admin
 wp-includes
-wp-content/themes/*
+wp-content/*
 !wp-content/themes/kasiaikod
 .vscode
-wp-content/plugins
-wp-content/uploads/
 
 wp-config.php
-wp-content/advanced-cache.php
-wp-content/backup-db/
-wp-content/backups/
-wp-content/blogs.dir/
-wp-content/cache/
-wp-content/upgrade/
 
 /.htaccess
 /license.txt

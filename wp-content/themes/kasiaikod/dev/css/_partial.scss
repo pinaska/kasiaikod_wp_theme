@@ -4,18 +4,19 @@
 		color:white;
 	}
 }
+/*HEADER and SITE BRANDING*/
 .site-title{
 	a{
 		font-weight: 700;
-		letter-spacing: 0.3rem;
+		letter-spacing: 0.5rem;
 	}
 }
 .site-description{
 	letter-spacing: 0.3rem;
 }
 .gradient-placer,.first,.second,.third {
-	height: 40vh;
 	width: 100%;
+	height: 40vh;
 }
 .first,.second,.third {
 	position: absolute;
@@ -89,4 +90,48 @@
 	width: 100%;
 	z-index: 1000;
 }
+
+/*NAVIGATION*/@at-root.main-navigation a {
+        /*color: #354568;*/
+        text-transform: uppercase;
+    }
+
+    .main-navigation li {
+		border-top: 0px;
+		a{
+			color:var(--global-font-color);
+		}
+    }
+
+    .main-navigation .primary-menu {
+        border-bottom: none !important;
+    }
+
+    .main-navigation li a:hover {
+        color: #dd74bc !important;
+    }
+
+    .main-navigation li:nth-child(1) a:hover {
+        color: #ffacfe !important;
+    }
+
+    .main-navigation li:nth-child(2) a:hover {
+        color: #bb0caf !important;
+    }
+
+    .main-navigation li:nth-child(3) a:hover {
+        color: #f4c3d9 !important;
+    }
+
+    .main-navigation li:nth-child(4) a:hover {
+        color: #dd74bc !important;
+    }
+
+    .main-navigation li:nth-child(5) a:hover {
+        color: #9d2160 !important;
+    }
+
+    .main-navigation li:nth-child(6) a:hover {
+        color: #e5e5e5 !important;
+    }
 
