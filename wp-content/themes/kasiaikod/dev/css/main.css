@@ -4,12 +4,30 @@
 		color: white; }
 
 /*HEADER and SITE BRANDING*/
-.site-title a {
-	font-weight: 700;
-	letter-spacing: 0.5rem; }
+.site-title {
+	font-size: 1.5rem;
+	padding: 0; }
+	@media (min-width: 600px) {
+		.site-title {
+			font-size: 2rem; } }
+	.site-title a {
+		font-weight: 700;
+		letter-spacing: 0.5rem;
+		font-size: 1rem; }
+		@media (min-width: 600px) {
+			.site-title a {
+				font-size: 1.2rem; } }
+		.site-title a:hover {
+			text-decoration: none; }
 
 .site-description {
-	letter-spacing: 0.3rem; }
+	letter-spacing: 0.1rem;
+	line-height: .75em;
+	margin-top: 0;
+	font-size: 2.5rem; }
+	@media (min-width: 600px) {
+		.site-description {
+			font-size: 4rem; } }
 
 .gradient-placer, .first, .second, .third {
 	width: 100%;
@@ -122,37 +140,33 @@
 	z-index: 1000; }
 
 /*NAVIGATION*/
+@media (min-width: 1000px) {
+	.main-navigation {
+		margin: 1rem auto 0;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		max-width: 1200px; } }
+
 .main-navigation a {
-	/*color: #354568;*/
-	text-transform: uppercase; }
+	color: var(--global-font-color);
+	text-transform: lowercase; }
+	.main-navigation a:hover {
+		text-decoration: none; }
 
 .main-navigation li {
 	border-top: 0px; }
 	.main-navigation li a {
+		text-transform: uppercase;
 		color: var(--global-font-color); }
+		.main-navigation li a:hover {
+			color: #dd74bc;
+			text-decoration: underline; }
+	.main-navigation li:nth-child(2) a:hover {
+		color: #bb0caf; }
 
-.main-navigation .primary-menu {
-	border-bottom: none !important; }
-
-.main-navigation li a:hover {
-	color: #dd74bc !important; }
-
-.main-navigation li:nth-child(1) a:hover {
-	color: #ffacfe !important; }
-
-.main-navigation li:nth-child(2) a:hover {
-	color: #bb0caf !important; }
-
-.main-navigation li:nth-child(3) a:hover {
-	color: #f4c3d9 !important; }
-
-.main-navigation li:nth-child(4) a:hover {
-	color: #dd74bc !important; }
-
-.main-navigation li:nth-child(5) a:hover {
-	color: #9d2160 !important; }
-
-.main-navigation li:nth-child(6) a:hover {
-	color: #e5e5e5 !important; }
+.main-navigation .social-menu-container ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center; }
 
 /*# sourceMappingURL=../../maps/dev/css/main.css.map */

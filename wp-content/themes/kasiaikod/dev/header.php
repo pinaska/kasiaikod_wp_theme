@@ -28,33 +28,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'wprig' ); ?></a>
 		<header id="masthead" class="site-header">
-			<?php if ( has_header_image() ) : ?>
-				<figure class="header-image">
-					<?php the_header_image_tag(); ?>
-				</figure>
-			<?php endif; ?>
-			<div class="site-branding">
-				<div class="gradient-placer">
-					<div class="first"></div>
-					<div class="second"></div>
-					<div class="third"></div>
-					<div class="txt">
-						<?php the_custom_logo(); ?>
-						<?php if ( is_front_page() && is_home() ) : ?>
-							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-						<?php else : ?>
-							<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-						<?php endif; ?>
-
-						<?php $wprig_description = get_bloginfo( 'description', 'display' ); ?>
-						<?php if ( $wprig_description || is_customize_preview() ) : ?>
-							<p class="site-description"><?php echo $wprig_description; /* WPCS: xss ok. */ ?></p>
-						<?php endif; ?>
-					</div><!--.txt-->
-				</div><!--.gradient-placer-->
-			</div><!-- .site-branding -->
-
-
+		<?php the_custom_logo(); ?>
 			<nav id="site-navigation" class="main-navigation" aria-label="<?php esc_attr_e( 'Main menu', 'wprig' ); ?>"
 				<?php if ( wprig_is_amp() ) : ?>
 					[class]=" siteNavigationMenu.expanded ? 'main-navigation toggled-on' : 'main-navigation' "
@@ -69,6 +43,11 @@
 						</script>
 					</amp-state>
 				<?php endif; ?>
+				<?php if ( is_front_page() && is_home() ) : ?>
+							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+						<?php else : ?>
+							<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+						<?php endif; ?>
 
 				<button class="menu-toggle" aria-label="<?php esc_attr_e( 'Open menu', 'wprig' ); ?>" aria-controls="primary-menu" aria-expanded="false"
 					<?php if ( wprig_is_amp() ) : ?>
@@ -92,5 +71,32 @@
 
 					?>
 				</div>
+				<div class="social-menu-container">
+					<?php
+
+					wp_nav_menu(
+						array(
+							'theme_location' => 'social',
+							'menu_class'  => 'social-links-menu',
+						)
+					);
+					?>
+				</div>
 			</nav><!-- #site-navigation -->
+			<div class="site-branding">
+				<div class="gradient-placer">
+					<div class="first"></div>
+					<div class="second"></div>
+					<div class="third"></div>
+					<div class="txt">
+						<?php $wprig_description = get_bloginfo( 'description', 'display' ); ?>
+						<?php if ( $wprig_description || is_customize_preview() ) : ?>
+							<p class="site-description"><?php echo $wprig_description; /* WPCS: xss ok. */ ?></p>
+						<?php endif; ?>
+					</div><!--.txt-->
+				</div><!--.gradient-placer-->
+			</div><!-- .site-branding -->
+
+
+
 		</header><!-- #masthead -->

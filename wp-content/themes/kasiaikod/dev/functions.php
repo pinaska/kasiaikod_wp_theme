@@ -45,6 +45,7 @@ function wprig_setup() {
 	register_nav_menus(
 		array(
 			'primary' => esc_html__( 'Primary', 'wprig' ),
+			'social'  => esc_html__( 'Social Links Menu', 'wprig' ),
 		)
 	);
 
