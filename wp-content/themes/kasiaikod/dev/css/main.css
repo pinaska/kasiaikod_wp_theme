@@ -216,8 +216,32 @@
 				transition: all 265ms ease-in; }
 
 /*
-*STYLE FOR FRON PAGE POSTS GRID
+*STYLE FOR FRONT PAGE
 */
+.front-search-form {
+	margin: 0 auto;
+	max-width: 60rem;
+	background: #efefef;
+	padding: 40px 10%;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	flex: 0 0 100%;
+	justify-content: center;
+	align-items: center; }
+	.front-search-form h4 {
+		font-size: 0.7rem;
+		background: #9d2160;
+		text-align: center;
+		color: #fff;
+		font-size: 1em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 1% 20px;
+		padding: 10px 20px;
+		text-transform: uppercase; }
+
 .post-ctn {
 	margin: 0 auto;
 	max-width: 60rem; }
