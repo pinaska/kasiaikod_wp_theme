@@ -1,0 +1,28 @@
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin: 0 2rem;
+}
+
+//basic responsivness
+@mixin desktop {
+    @media (min-width: $desktop__width) {
+      @content;
+    }
+  }
+
+  @mixin tablet {
+    @media (min-width: $tablet__width) {
+      @content;
+    }
+  }
+
+  //socials icons
+$timing        : 265ms;
+$iconColor     : #45C7E0;
+$accent        : #ff63b1;
+
+@mixin transformScale($size: 1) {
+	transform: scale($size);
+}

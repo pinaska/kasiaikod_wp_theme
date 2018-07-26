@@ -1,0 +1,46 @@
+/*
+*STYLE FOR FRONT PAGE
+*/
+//FRONT EARCH FORM
+.front-search-form {
+	margin: 0 auto;
+	max-width: 60rem;
+	background: #efefef;
+	padding: 40px 10%;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	flex: 0 0 100%;
+	justify-content: center;
+	align-items: center;
+	h4 {
+		font-size: 0.7rem;
+		background: #9d2160;
+		text-align: center;
+		color: #fff;
+		font-size: 1em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 1% 20px;
+		padding: 10px 20px;
+		text-transform: uppercase;
+	}
+}
+
+
+//POSTS GRID
+.post-ctn{
+	margin: 0 auto;
+	max-width: 60rem;
+	@include tablet {
+		grid-gap: 1rem;
+		display: grid;
+		grid-template-columns: 40% 40%;
+	}
+	@include desktop {
+		grid-gap: 1rem;
+		display: grid;
+		grid-template-columns: 30% 30% 30%;
+	}
+}

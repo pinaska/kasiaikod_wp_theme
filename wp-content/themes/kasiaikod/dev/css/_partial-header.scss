@@ -1,0 +1,204 @@
+.entry-title{
+	background-color:var(--header-background-color);
+	a{
+		color:white;
+	}
+}
+/*HEADER and SITE BRANDING*/
+.site-title{
+	font-size: 1.5rem;
+	padding: 0;
+		@include tablet{
+			font-size: 2rem;
+		}
+	a{
+		font-weight: 700;
+		letter-spacing: 0.5rem;
+		font-size: 1rem;
+		@include tablet{
+			font-size: 1.2rem;
+		}
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+.site-description{
+	letter-spacing: 0.1rem;
+	line-height: .75em;
+	margin-top: 0;
+	font-size: 2.5rem;
+	@include tablet{
+		font-size: 4rem;
+	}
+}
+.gradient-placer,.first,.second,.third {
+	width: 100%;
+	height: 40vh;
+}
+.first,.second,.third {
+	position: absolute;
+}
+.second,.third {
+	opacity: 0;
+}
+.gradient-placer {
+	height: 40vh;
+	position: relative;
+	z-index: 1;
+}
+.first {
+	animation: first 10s infinite;
+	background: linear-gradient(#bd3c92, #78075c);
+	z-index: 10;
+}
+@keyframes first {
+	0% {opacity: 1.0;}
+	10% {opacity: 0.8;}
+	20% {opacity: 0.6;}
+	30% {opacity: 0.4;}
+	40% {opacity: 0.2;}
+	50% {opacity: 0.1;}
+	60% {opacity: 0.2;}
+	70% {opacity: 0.4;}
+	80% {opacity: 0.6;}
+	90% {opacity: 0.8;}
+	100% {opacity: 1.0;}
+}
+.second {
+	animation: second 10s infinite; animation-delay: 2s;
+	background: linear-gradient(#45C7E0, #00a1f0);
+	z-index: 20;
+}
+@keyframes second {
+	0% {opacity: 0;}
+	10% {opacity: 0.2;}
+	20% {opacity: 0.4;}
+	30% {opacity: 0.6;}
+	40% {opacity: 0.8;}
+	50% {opacity: 1.0;}
+	60% {opacity: 0.8;}
+	70% {opacity: 0.6;}
+	80% {opacity: 0.4;}
+	90% {opacity: 0.2;}
+	100% {opacity: 0;}
+}
+.third {
+	animation: third 10s infinite;
+	animation-delay: 8s;
+	background: linear-gradient(#FF83D1, #ff75c6);
+	z-index: 30;
+}
+@keyframes third {
+	0% {opacity: 0;}
+	10% {opacity: 0.2;}
+	20% {opacity: 0.4;}
+	30% {opacity: 0.6;}
+	40% {opacity: 0.8;}
+	50% {opacity: 1.0;}
+	60% {opacity: 0.8;}
+	70% {opacity: 0.6;}
+	80% {opacity: 0.4;}
+	90% {opacity: 0.2;}
+	100% {opacity: 0;}
+}
+.txt {
+	margin-top: calc(10vh);
+	position: absolute;
+	width: 100%;
+	z-index: 1000;
+}
+
+/*NAVIGATION*/
+.main-navigation {
+	@include desktop{
+		margin: 1rem auto 0;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		max-width: 1200px;
+	}
+	a{
+		color:var(--global-font-color);
+		text-transform: lowercase;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	.primary-menu-container{
+		// display: flex;
+		li{
+			border-top: 0px;
+			a{
+				text-transform: uppercase;
+				color:var(--global-font-color);
+				@include desktop{
+					font-size: 0.8rem;
+				}
+				&:hover{
+					color: #dd74bc;
+					text-decoration: underline;
+				}
+			}
+			&:nth-child(2){
+				a{
+					&:hover{
+						color: #bb0caf;
+					}
+				}
+			}
+		}
+	}
+	.social-menu-container{
+		.social-icons{
+			display:flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			li{
+				display: inline-block;
+				margin: 0.15em;
+				position: relative;
+				font-size: 0.8em;
+				i {
+					color: #fff;
+					position: absolute;
+					top: 1.5rem;
+					@include tablet{
+						top:1rem;
+					}
+					left: 1rem;
+					transition: all $timing ease-out;
+				}
+				a {
+					display: inline-block;
+					&:before {
+						@include transformScale();
+						content: " ";
+						width: 3rem;
+						height: 3rem;
+						@include tablet{
+							width: 2rem;
+							height: 2rem;
+						}
+						border-radius: 100%;
+						display: block;
+						background: linear-gradient(45deg, $iconColor, $accent);
+						transition: all $timing ease-out;
+					}
+					&:hover:before {
+						transform: scale(0);
+						transition: all $timing ease-in;
+					}
+					&:hover i {
+						@include transformScale(2.2);
+						color: $iconColor;
+						background: -webkit-linear-gradient(45deg, $iconColor, $accent);
+						-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;
+						transition: all $timing ease-in;
+					}
+				}
+			}
+		}
+	}
+}
+
