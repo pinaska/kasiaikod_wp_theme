@@ -104,6 +104,9 @@
 }
 .txt {
 	margin-top: calc(10vh);
+	@include desktop{
+		margin-top: calc(15vh);
+	}
 	position: absolute;
 	width: 100%;
 	z-index: 1000;

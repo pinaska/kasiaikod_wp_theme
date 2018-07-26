@@ -142,6 +142,9 @@
 	position: absolute;
 	width: 100%;
 	z-index: 1000; }
+	@media (min-width: 1000px) {
+		.txt {
+			margin-top: calc(15vh); } }
 
 /*NAVIGATION*/
 @media (min-width: 1000px) {
@@ -218,6 +221,22 @@
 /*
 *STYLE FOR FRONT PAGE
 */
+.entry-row-img {
+	background-image: url(http://localhost/kasiaikod/wp-content/uploads/2018/02/Kasia_Kate_Jeziorska_blackwhite_ps-768x1024.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: right;
+	background-size: contain;
+	height: 800px; }
+
+.entry-row-second-img {
+	background-image: url(http://localhost/kasiaikod/wp-content/uploads/2018/02/code_laptop_Kasia-i-kod-1024x684-1024x684.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: left;
+	background-size: cover;
+	height: 600px; }
+
 .front-search-form {
 	margin: 0 auto;
 	max-width: 60rem;
