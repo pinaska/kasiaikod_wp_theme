@@ -3,12 +3,17 @@
 *.log
 *.sql
 
-node_modules
-wp-admin
-wp-includes
-wp-content/*
-!wp-content/themes/kasiaikod
-.vscode
+node_modules/
+wp-admin/
+wp-includes/
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/plugins/
+wp-content/themes/*
+!wp-content/themes/kasiaikod/
+!wp-content/themes/kasiaikod/
+
+.vscode/
 
 wp-config.php
 

@@ -1,0 +1,1 @@
+"use strict";var custom=void 0;function doSomeMath(){return++custom}doSomeMath();
