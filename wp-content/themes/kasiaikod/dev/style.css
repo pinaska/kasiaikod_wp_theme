@@ -639,23 +639,42 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
-	color: rgba(0, 0, 0, 0.8);
+	/* border: 1px solid;
+	border-color: #ccc #ccc #bbb;*/
+	border-radius: 20px;
+	border: 1px solid transparent;
+	margin: 0.5rem;
+	text-align: center;
+	text-transform: uppercase;
+	/* transition: 0.5s linear; */
+	color: white;
+	background-size: 100%;
+	background-image: linear-gradient(45deg, #45C7E0, #ff63b1);
 	font-size: 12px;
 	font-size: 0.75rem;
 	line-height: 1;
-	padding: .6em 1em .4em;
+	padding: 2rem;
 	cursor: pointer;
+	transition: all 265ms ease-out;
+}
+button a{
+	color:white;
+	letter-spacing: 0.2rem;
+	text-decoration: none;
+	padding: .4em 0.5em;
+	font-family: var(--highlight-font-family);
+}
+button a:visited{
+	color: white;
 }
 
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	border-color: #ccc #bbb #aaa;
+		/* background-position: right center; */
+		/* background-color: deeppink; */
+		transform: scale(0.9);
 }
 
 button:active, button:focus,
@@ -665,7 +684,7 @@ input[type="reset"]:active,
 input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
-	border-color: #aaa #bbb #bbb;
+	border:none;
 }
 
 input[type="text"],

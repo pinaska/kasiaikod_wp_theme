@@ -248,18 +248,22 @@
 	flex: 0 0 100%;
 	justify-content: center;
 	align-items: center; }
-	.front-search-form h4 {
-		font-size: 0.7rem;
-		background: #9d2160;
-		text-align: center;
-		color: #fff;
-		font-size: 1em;
+	.front-search-form .cat-list {
 		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin: 0 1% 20px;
-		padding: 10px 20px;
-		text-transform: uppercase; }
+		flex-direction: column; }
+		@media (min-width: 600px) {
+			.front-search-form .cat-list {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr; } }
+		.front-search-form .cat-list h4 {
+			font-size: 0.7rem;
+			background: #9d2160;
+			text-align: center;
+			color: #fff;
+			font-size: 1em;
+			margin: 0 1% 20px;
+			padding: 10px 20px;
+			text-transform: uppercase; }
 
 .post-ctn {
 	margin: 0 auto;

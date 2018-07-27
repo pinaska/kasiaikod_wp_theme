@@ -349,24 +349,27 @@
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center; }
-	.front-search-form h4 {
-		font-size: 0.7rem;
-		background: #9d2160;
-		text-align: center;
-		color: #fff;
-		font-size: 1em;
+	.front-search-form .cat-list {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
-		margin: 0 1% 20px;
-		padding: 10px 20px;
-		text-transform: uppercase; }
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column; }
+		@media (min-width: 600px) {
+			.front-search-form .cat-list {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr; } }
+		.front-search-form .cat-list h4 {
+			font-size: 0.7rem;
+			background: #9d2160;
+			text-align: center;
+			color: #fff;
+			font-size: 1em;
+			margin: 0 1% 20px;
+			padding: 10px 20px;
+			text-transform: uppercase; }
 
 .post-ctn {
 	margin: 0 auto;
