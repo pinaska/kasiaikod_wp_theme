@@ -786,6 +786,7 @@ textarea {
 }
 
 .site-title a {
+	display: none;
 	text-decoration: none;
 	color: inherit;
 	text-transform: uppercase;
@@ -816,6 +817,7 @@ textarea {
 }
 
 .menu-toggle {
+	color:#354568;
 	display: block;
 	margin: 1.2em auto;
 	padding: .6em 1.2em .5em;

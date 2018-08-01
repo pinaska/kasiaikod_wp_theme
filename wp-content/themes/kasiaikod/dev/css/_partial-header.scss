@@ -6,22 +6,26 @@
 }
 /*HEADER and SITE BRANDING*/
 .site-title{
-	font-size: 1.5rem;
-	padding: 0;
-		@include tablet{
-			font-size: 2rem;
-		}
-	a{
-		font-weight: 700;
-		letter-spacing: 0.5rem;
-		font-size: 1rem;
-		@include tablet{
-			font-size: 1.2rem;
-		}
-		&:hover{
-			text-decoration: none;
-		}
-	}
+	display: none;
+	// font-size: 1.5rem;
+	// padding: 0;
+	// 	@include tablet{
+	// 		font-size: 2rem;
+	// 	}
+	// a{
+	// 	font-weight: 700;
+	// 	letter-spacing: 0.5rem;
+	// 	font-size: 1rem;
+	// 	@include tablet{
+	// 		font-size: 1.2rem;
+	// 	}
+	// 	&:hover{
+	// 		text-decoration: none;
+	// 	}
+	// }
+}
+.menu-toggle a{
+	color: var(--global-font-color);
 }
 .site-description{
 	letter-spacing: 0.1rem;
@@ -116,8 +120,8 @@
 .main-navigation {
 	@include desktop{
 		margin: 1rem auto 0;
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
+		// display: grid;
+		// grid-template-columns: 1fr 1fr 1fr;
 		max-width: 1200px;
 	}
 	a{

@@ -33,7 +33,7 @@
 				<?php if ( wprig_is_amp() ) : ?>
 					[class]=" siteNavigationMenu.expanded ? 'main-navigation toggled-on' : 'main-navigation' "
 				<?php endif; ?>
-			>
+
 				<?php if ( wprig_is_amp() ) : ?>
 					<amp-state id="siteNavigationMenu">
 						<script type="application/json">
@@ -44,9 +44,9 @@
 					</amp-state>
 				<?php endif; ?>
 				<?php if ( is_front_page() && is_home() ) : ?>
-							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+							<h1 class="site-title"></h1>
 						<?php else : ?>
-							<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+							<p class="site-title"></p>
 						<?php endif; ?>
 
 				<button class="menu-toggle" aria-label="<?php esc_attr_e( 'Open menu', 'wprig' ); ?>" aria-controls="primary-menu" aria-expanded="false"
@@ -55,7 +55,7 @@
 						[aria-expanded]="siteNavigationMenu.expanded ? 'true' : 'false'"
 					<?php endif; ?>
 				>
-					<?php esc_html_e( 'Menu', 'wprig' ); ?>
+					<?php esc_html_e( 'Kasia i kod', 'wprig' ); ?>
 				</button>
 
 				<div class="primary-menu-container">
